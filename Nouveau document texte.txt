@@ -1,0 +1,44 @@
+couleur orange 
+#EE7F00
+
+couleur gris menu
+#F2F2F2
+
+couleur noir 
+#000000
+
+[vc_row][vc_column_text css=".vc_custom_1499934117511{margin-right: -40px !important;margin-bottom: -10px !important;margin-left: -40px !important;}"]
+<h2 style="text-align: center; color: #a56f69; font-family: comic sans ms,sans-serif;"><span style="font-family: dk-lemon;">NOS CLIENT(E)S SONT SATISFAITS</br></span></h2>
+[/vc_column_text][vc_column width="3/4" alignment="left"][testimonial_view id=3][/vc_column][vc_column width="1/4"][vc_single_image image="2798" img_size="medium" alignment="right" css=".vc_custom_1498465116338{padding-right: 40px !important;}"][/vc_column][/vc_row]
+
+
+
+Je cherche une idée de cadeau original pour les 30 ans de mon mec
+
+Pour les 30ans de mon copain je lui ai offert un shooting photo. J'ai trouvé cette idée de cadeau super originale et il ne s'y attendait pas.
+On en garde un très bon souvenir et l'équipe de photographes était au top, je ne savais pas trop à quoi m'attendre et franchement nous ne sommes pas décus !
+Le site ou je l'ai acheté :
+https://www.iletaituneboite.com
+
+Pour les 18ans de ma meilleure amie je lui ai offert un shooting photo. 
+J'ai trouvé cette idée de cadeau super originale et en plus elle en gardera un souvenir à vie.
+L'équipe de photographes était au top, et franchement nous ne sommes pas décues !
+Le site ou je l'ai acheté :
+https://www.iletaituneboite.com
+
+Hello tout le monde  
+
+Moi, pour les 18 ans de ma meilleure amie je lui ai offert un shooting photo. 
+
+Je suis contente car c'était une idée de cadeau super originale! En plus elle en gardera un souvenir à vie.
+
+L'équipe de photographes était au top, et elle était ravie ! 
+
+Le site ou je l'ai acheté :
+https://www.iletaituneboite.com
+
+
+En espérant faire d'autres heureux(ses)  à faire !
+
+
+logiciel pour editer cheques et immprimer

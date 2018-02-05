@@ -1,0 +1,67 @@
+* {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.header ul {
+  display: flex;
+  font-weight: bold;
+}
+.header li {
+  margin-left: 10px;
+}
+.bloc1 {
+  margin-left: 200px;
+}
+.header ul img {
+  filter: grayscale(100%);
+}
+.bloc2 img {
+
+}
+.bloc3 {
+  text-align: right;
+  margin-right: 200px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.monCompte span {
+  font-weight: lighter;
+  font-size: 12px;
+  text-transform: none;
+  text-align: right;
+}
+.menu {
+  display: run-in;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 200px;
+  margin-left: 200px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: grey;
+  padding:10px;
+}
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
