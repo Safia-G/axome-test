@@ -3,65 +3,528 @@
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
+  color: #000000;
 }
-.header {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 10px;
 }
-.header ul {
+.langues {
+  display: flex;
+  flex-direction: row;
+}
+.bloc1 ul {
   display: flex;
   font-weight: bold;
 }
-.header li {
+.langues li {
   margin-left: 10px;
 }
-.bloc1 {
-  margin-left: 200px;
+.langues span {
+  color: #EE7F00;
 }
-.header ul img {
+.bloc1 ul img {
   filter: grayscale(100%);
 }
-.bloc2 img {
-
+.bloc2{
+  display: flex;
 }
 .bloc3 {
   text-align: right;
-  margin-right: 200px;
   font-weight: bold;
-  text-transform: uppercase;
+  font-variant: small-caps;
+  font-size: 15px;
+}
+.monCompte {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  margin-left: 200px;
+  margin-bottom: 7px;
+  padding-right: 15px;
+  line-height: 12px;
+  padding: 5px;
+  clip-path: polygon(100% 0, 100% 100%, 14% 100%, 0 63%, 0 0);
 }
 .monCompte span {
+  overflow: hidden;
   font-weight: lighter;
   font-size: 12px;
   text-transform: none;
   text-align: right;
+  font-variant: none;
+  padding-right: 5px;
+}
+.inscription {
+  background-color: #EE7F00;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 200px;
+  color: white;
+  padding: 4px;
+  padding-right: 15px;
+  clip-path: polygon(100% 0, 100% 100%, 14% 100%, 0 63%, 0 0);
+}
+.inscription span {
+  font-weight: lighter;
+  color: white;
+  margin-right: 5px;
 }
 .menu {
-  display: run-in;
+  font-size: 13px;
+  position: absolute;
+  z-index: 2;
+  padding-left: 10px;
 }
 .menu ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-left: 170px;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: grey;
-  padding:10px;
+  background-color: #F2F2F2;
+  padding-top: 15px;
+  padding-right: 10px;
 }
-.carousel{
-    background: #2f4357;
-    margin-top: 20px;
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu a:hover {
+  color: black;
+  text-decoration: none;
+}
+.menu span {
+  margin-left: 5px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.menu li {
+  list-style-type: none;
+  margin-left: 7px;
+  padding-right: 26.5px;
+}
+.menu li > a {
+  text-decoration: none;
+}
+.menu li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 6px;
+  width: 4px;
+  margin-top: 2px;
+  padding-left: 10px;
+  background: transparent;
+  transition: all 0.3s;
+}
+.menu li > a:hover::after, li > a.active-nav::after {
+  width: 100%;
+  background: #EE7F00;
+}
+.carousel {
+  z-index: 1;
+  display: flex;
+  margin-top: 35px;
+  background: #2f4357;
+}
+.glyphicon {
+  overflow: hidden;
+  color: white;
 }
 .carousel .item{
-    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+  min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
 }
 .carousel .item img{
-    margin: 0 auto; /* Align slide image horizontally center */
+  margin: 0 auto; /* Align slide image horizontally center */
 }
 .bs-example{
 	margin: 20px;
+}
+.encart {
+  position: absolute;
+  margin-top: -150px;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-left: 170px !important;
+  margin-right: 170px !important;
+}
+.encart2 img {
+  display: flex;
+}
+.encart .encart2 {
+  margin-left: 20px;
+}
+.encart2 {
+  background-color: white;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.titre {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-variant: small-caps;
+  margin-bottom: 7px;
+  font-weight: bold;
+  line-height: 12px;
+  padding: 5px;
+  clip-path: polygon(0 0, 100% 0%, 88% 100%, 0% 100%);
+  margin-right: 90px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.titre span {
+  font-weight: lighter;
+  font-size: 12px;
+  text-transform: none;
+  text-align: right;
+  font-variant: none;
+  padding-right: 5px;
+  color: white;
+}
+.encart2 img {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-right: 0px;
+  padding-right: 30px;
+}
+.titre1 {
+  background-color: #EE7F00;
+  color: white;
+  font-size: 30px;
+  font-variant: small-caps;
+  margin-bottom: 7px;
+  font-weight: bold;
+  line-height: 12px;
+  padding: 5px;
+  clip-path: polygon(0 0, 100% 0%, 88% 100%, 0% 100%);
+  margin-right: 90px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.titre1 span {
+  font-weight: lighter;
+  font-size: 12px;
+  text-transform: none;
+  text-align: right;
+  font-variant: none;
+  padding-right: 5px;
+  color: white;
+}
+.chercher {
+  margin-top: 65px !important;
+}
+
+.search {
+  color: white;
+  text-align:right;
+  margin-left: 120px;
+  padding: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  background-color: black;
+  clip-path: polygon(100% 0, 100% 100%, 10% 100%, 0 53%, 0 0);
+  margin-top: 28px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.lorem h4 {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 20px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.lorem {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  margin-left: 30px;
+  margin-right: 20px;
+  }
+.lorem span {
+  text-align: right;
+  margin-left: 180px;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+.banners {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 250px;
+}
+.banner1 {
+  margin-left: 170px;
+  display: flex;
+}
+.newsletter {
+  background-color: #F2F2F2;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.titre2 {
+  background-color: #EE7F00;
+  color: white;
+  font-size: 30px;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 12px;
+  padding: 5px;
+  margin-bottom: 7px;
+  clip-path: polygon(0 0, 100% 0%, 88% 100%, 0% 100%);
+  margin-right: 100px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+}
+.texte {
+  margin-left: 30px;
+}
+.ipsum {
+  color: white;
+  display: none;
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+#exampleInputEmail1 {
+  border-radius: 0px;
+  color: black;
+}
+#button {
+  border-radius: 0px;
+  background-color: black;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.banners .newsletter {
+  display: flex;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 170px;
+
+}
+
+.banner3 {
+  flex-direction: column;
+  display: flex;
+}
+.bannersBis img {
+  display: flex;
+}
+.bannersBis {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.banner4 {
+  display: flex;
+}
+.banner3 img {
+  display: flex;
+  margin-left: 170px;
+}
+.banner4 img{
+  margin-right: 170px;
+  margin: 0;
+}
+.partenaire {
+  background-color: #F2F2F2;
+  margin-top: 10px;
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 30px;
+}
+.partenaires {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-variant: small-caps;
+  margin-top: 20px;
+}
+.footer ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 20px;
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer img {
+  margin-left: 170px;
+}
+.footer a:hover {
+  color: white;
+  text-decoration: none;
+  color: grey;
+}
+@media (min-width: 992px) {
+.col-md-8 {
+  width: fit-content !important;
+}
+}
+@media screen and (max-width:800px){
+    .bloc2 {
+        display: flex;
+    }
+    .langues {
+      display: none;
+    }
+    .navbar-nav {
+      display: none;
+    }
+    .encart {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 20px !important;
+    }
+    .newsletter {
+      margin-right: 0px;
+    }
+    .ipsum  {
+      display: flex;
+    }
+    .titre {
+      font-size: 15px;
+      margin-bottom: 7px;
+      padding: 5px;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      margin-right: 0px;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-right: 50px;
+      padding-bottom: 10px;
+    }
+    .titre span {
+      font-size: 10px;
+      padding-right: 5px;
+    }
+    .encart2 img {
+      margin-left: 10px;
+      margin-top: 5px;
+      margin-right: 0px;
+      padding-right: 0px;
+      height: 100px;
+      width: 200px;
+    }
+    .titre1 {
+      font-size: 15px;
+      margin-bottom: 7px;
+      padding: 5px;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      margin-right: 0px;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+    }
+    .titre1 span {
+      font-size: 10px;
+      padding-right: 0px;
+    }
+    .search {
+      margin-left: 0px;
+      padding: 5px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-right: 20px;
+      font-variant: small-caps;
+      letter-spacing: 3px;
+      background-color: black;
+      clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 53%, 0 0);
+      margin-top: 30px;
+      margin-right: 0px;
+    }
+    .lorem h4 {
+      font-variant: small-caps;
+      font-weight: bold;
+      font-size: 12px;
+      overflow: hidden;
+      margin-right: 10px;
+    }
+    .lorem {
+      font-size: 10px;
+      margin-left: 10px;
+      }
+    .lorem span {
+      display: none;
+    }
+    .banners {
+      display: flex;
+      margin-top: 450px;
+      margin-left: 20px !important;
+      flex-wrap: wrap;
+    }
+    .bannersBis {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 20px !important;
+    }
+    .banner1 {
+      margin-left: 10px;
+      display: flex;
+    }
+    .banner3 img {
+      display: flex !important;
+      margin-left: 10px;
+    }
+    .banner4 {
+      margin-left: 10px;
+    }
+     .menu {
+       display: none;
+     }
+    .navbar-brand {
+      visibility: visible;
+    }
+    .navbar>.container .navbar-brand-centered,
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+    .partenaires {
+      flex-wrap: wrap;
+    }
+    .partenaire {
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+    }
+    .partenaires img {
+      height: 100px;
+      width: 100px;
+    }
+    .footer {
+      font-size: 10px;
+    }
 }

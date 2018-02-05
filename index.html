@@ -8,12 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <body>
 
-    <div class="row header">
-      <div class="col-md-4 bloc1">
+  <nav class="navbar navbar-default" style="border:none; background-color:white; margin-right:170px; margin-left:170px">
+      <div class="col-md-4 bloc1  nav navbar-nav">
         <ul class="langues">
-          <li>FR </li>
+          <li><span>FR</span></li>
           <li>| EN</li>
           <li>| NL</li>
         </ul>
@@ -29,44 +30,46 @@
         <img src="images/logo-header.png" alt="" height="50px;">
       </div>
 
-      <div class="col-md-4 bloc3">
+      <div class="col-md-4 bloc3 nav navbar-nav navbar-right">
         <div class="monCompte">
-          My UrbanSoccer <br>
+          my urbansoccer <br>
           <span>Mon compte</span>
         </div>
         <div class="inscription">
-          > Inscription
+          <span> > </span> inscription
         </div>
       </div>
     </div>
+  </div>
+  </nav>
 
-    <div class="row menu">
-      <ul>
-        <li><img src="images/home.png" alt=""></li>
-        <li>Sélectionnez votre centre </li>
-        <li>Leagues</li>
-        <li>Kids</li>
-        <li>Cup/Tournois</li>
-        <li>Events</li>
-        <li>Store</li>
-        <li>Vidéos</li>
-        <li>Urbansoccer</li>
+    <div class="menu navbar-header">
+      <ul class="navbar-nav">
+        <li style="overflow:hidden"><a class="active-nav"><span><i class="material-icons">home</i></span></a></li>
+        <li><a href="#">Sélectionnez votre centre &#9013;  </a></li>
+        <li><a href="#">Leagues</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Cup/Tournois</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Vidéos</a></li>
+        <li><a href="#">Urbansoccer</a></li>
       </ul>
     </div>
-    
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Carousel indicators -->
+        <!--Carousel indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
         </ol>
-        <!-- Wrapper for carousel items -->
+          <!--Wrapper for carousel items -->
         <div class="carousel-inner">
             <div class="item active">
                 <img src="images/slide-01.jpg" alt="First Slide">
             </div>
             <div class="item">
-                <img src="images/slide-02.jpg" alt="Second Slide">
+              <img src="images/slide-02.jpg" alt="Second Slide">
             </div>
         </div>
         <!-- Carousel controls -->
@@ -79,17 +82,128 @@
     </div>
 
     <div class="row encart">
-      <div class="col-md-4">
-        <img src="images/encart-01.jpg" alt="">
+      <div class="col-md-4 encart2">
+        <div class="titre">
+          nos centres <br>
+          <span>Trouvez votre centre</span>
+        </div>
+        <img src="images/encart-01.jpg" alt="" height="200px">
+        <div class="ipsum">
+          trouver mon centre Sed ut perspiciatis unde omnis iste natus error sitSed ut perspiciatis
+        </div>
+        <div class="search chercher">
+          > chercher
+        </div>
       </div>
-      <div class="col-md-4">
-        <img src="images/encart-02.jpg" alt="">
+      <div class="col-md-4 encart2">
+        <div class="titre1">
+          actualité <br>
+          <span>Toute l'actu de vos centres</span>
+        </div>
+        <img src="images/encart-02.jpg" alt="" height="150px">
+        <div class="lorem">
+          <h4>dapibus ut ac augue scelerique</h4>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium ...<br>
+          <span> > lire la suite</span>
+        </div>
+        <div class="search">
+          > toute l'actu
+        </div>
       </div>
-      <div class="col-md-4">
-        <img src="images/encart-03.jpg" alt="">
+      <div class="col-md-4 encart2 last-encart">
+        <div class="titre">
+          store <br>
+          <span>Equipement, flocage...</span>
+        </div>
+        <img src="images/encart-03.jpg" alt="" height="150px">
+        <div class="lorem">
+          <h4>lorem ipsum dolor sit amet</h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="search">
+          > voir le store
+        </div>
       </div>
     </div>
 
+    <div class="row banners">
+      <div class="col-md-8 banner1">
+        <img src="images/banner-01.jpg" alt=""  height="195px" width="950px">
+      </div>
+      <div class="col-md-4 newsletter">
+        <div class="titre2">
+          newsletter
+        </div>
+        <div class="texte">
+          Toute les infos de votre centre, les offres, les événements...
+          <br>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Votre mail">
+            <button type="submit" id="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="row bannersBis">
+      <div class="col-md-8 banner3">
+        <img src="images/banner-02.jpg" alt="" height="220px" >
+        <img src="images/banner-03.jpg" alt="" height="220px">
+      </div>
+      <div class="col-md-4 banner4" style="margin-top:10px">
+        <img src="images/banner-04.jpg" alt="" height="420px" width="320px">
+      </div>
+    </div>
+
+    <div class="row partenaire" style="margin-left:170px; margin-right:170px">
+      nos partenaires
+      <ul class="partenaires">
+        <li><img src="images/partenaire-01.png" alt=""></li>
+        <li><img src="images/partenaire-02.png" alt=""></li>
+        <li><img src="images/partenaire-03.png" alt=""></li>
+        <li><img src="images/partenaire-04.png" alt=""></li>
+        <li><img src="images/partenaire-05.png" alt=""></li>
+        <li><img src="images/partenaire-06.png" alt=""></li>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="#">accueil</a></li>
+          <li> / </li>
+          <li><a href="#">votre centre</a></li>
+          <li> / </li>
+          <li><a href="#">leagues</a></li>
+          <li> / </li>
+          <li><a href="#">kids</a></li>
+          <li> / </li>
+          <li><a href="#">cup-tournois</a></li>
+          <li> / </li>
+          <li><a href="#">events</a></li>
+          <li> / </li>
+          <li><a href="#">store</a></li>
+          <li> / </li>
+          <li><a href="#">vidéos</a></li>
+          <li> / </li>
+          <li><a href="#">urbansoccer</a></li>
+        </ul>
+        <div class="col-md-4">
+          <img src="images/logo-footer.png" alt="" width="200px">
+        </div>
+        <div class="col-md-8">
+          <ul>
+            <li><a href="#">conditions générales</a></li>
+            <li> | </li>
+            <li><a href="#">mentions légales</a></li>
+            <li> | </li>
+            <li><a href="#">plan du site</a></li>
+            <li> | </li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
   </body>
 </html>
